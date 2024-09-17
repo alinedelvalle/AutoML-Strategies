@@ -1,0 +1,202 @@
+id;Dataset;normalize;meka;weka;F1 (macro averaged by label);Model Size
+1;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+2;emotions;True;meka.classifiers.multilabel.RAkELd -P 5 -N 3 -batch-size 3;weka.classifiers.lazy.KStar -- -B 39 -E -M m;0.34321000000000024;1656409.0491977907
+3;emotions;False;meka.classifiers.multilabel.RT;weka.classifiers.rules.PART -- -M 21 -B;0.593419999999999;37124.62259010801
+4;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.rules.DecisionTable -- -E rmse -I -S GreedyStepwise -X 3;0.6202816706349208;851318.7188732674
+5;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 0 -batch-size 5;weka.classifiers.rules.PART -- -M 2 -B -R -N 4;0.5595899999999998;98222.86507057994
+6;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.019 -m 0.4;;0.6280500000000007;38979.635038037326
+7;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 31 -X;0.6372899999999997;1493850.1577680334
+8;emotions;False;meka.classifiers.multilabel.BRq -P 0.65;weka.classifiers.trees.RandomTree -- -M 30 -K 24 -depth 0 -N 0;0.5862600000000003;31644.44032537178
+9;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.J48 -- -M 28 -J -U;0.5563699999999994;23646.049078663415
+10;emotions;False;meka.classifiers.multilabel.BPNN -E 321 -H 39 -r 0.098 -m 0.8;;0.23617000000000016;59497.743836174
+11;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.rules.DecisionTable -- -E rmse -I -S GreedyStepwise -X 3;0.6202816706349208;851318.7188732674
+12;emotions;False;meka.classifiers.multilabel.BRq -P 0.65;weka.classifiers.functions.SGD -- -F 1 -L 1e-05 -R 1e-06 -N;0.5230500000000003;47877.00000000065
+13;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+14;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.J48 -- -M 28 -J -U;0.5563699999999994;23646.049078663415
+15;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+16;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.rules.DecisionTable -- -E mae -I -S GreedyStepwise -X 3;0.6202816706349208;851318.7188732674
+17;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+18;emotions;False;meka.classifiers.multilabel.BPNN -E 321 -H 39 -r 0.098 -m 0.8;;0.23617000000000016;59497.743836174
+19;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.019 -m 0.4;;0.6280500000000007;38979.635038037326
+20;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 6 -X;0.6367700000000008;1493198.1592483136
+21;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN;0.5968399999999996;238108.60291413355
+22;emotions;False;meka.classifiers.multilabel.RT;weka.classifiers.rules.PART -- -M 21 -B;0.593419999999999;37124.62259010801
+23;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+24;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+25;emotions;False;meka.classifiers.multilabel.RT;weka.classifiers.rules.PART -- -M 21 -B;0.593419999999999;37124.62259010801
+26;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+27;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.019 -m 0.4;;0.6280500000000007;38979.635038037326
+28;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+29;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+30;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TabuSearch -- -P 1;0.5968399999999996;238108.60291413355
+31;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+32;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+33;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+34;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+35;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.019 -m 0.4;;0.6280500000000007;38979.635038037326
+36;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+37;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 6 -X;0.6367700000000008;1493198.1592483136
+38;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TabuSearch -- -P 1;0.5968399999999996;238108.60291413355
+39;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+40;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+41;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.019 -m 0.4;;0.6280500000000007;38979.635038037326
+42;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+43;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+44;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+45;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+46;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+47;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TabuSearch -- -P 1;0.5968399999999996;238108.60291413355
+48;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+49;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+50;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+51;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.VotedPerceptron -- -I 7 -M 48677 -E 3.300000000000001;0.17575500000000002;4193222.2989221443
+52;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+53;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+54;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+55;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+56;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+57;emotions;False;meka.classifiers.multilabel.BRq -P 0.55;weka.classifiers.trees.RandomTree -- -M 36 -K 24 -depth 0 -N 0;0.5849700000000005;29936.70323941745
+58;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+59;emotions;False;meka.classifiers.multilabel.BRq -P 0.65;weka.classifiers.trees.RandomTree -- -M 30 -K 24 -depth 0 -N 0;0.5862600000000003;31644.44032537178
+60;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+61;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.019 -m 0.4;;0.6280500000000007;38979.635038037326
+62;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 58 -K 0 -depth 0 -N 0;0.5625900000000003;13333.70914915436
+63;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+64;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 63 -X -I;0.6483000000000005;1494241.357898459
+65;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 11 -N 0;0.5609600000000006;13194.46262650191
+66;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+67;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+68;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 63 -X -I;0.6483000000000005;1494241.357898459
+69;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 58 -K 0 -depth 0 -N 0;0.5625900000000003;13333.70914915436
+70;emotions;True;meka.classifiers.multilabel.BPNN -E 343 -H 23 -r 0.049 -m 0.2;;0.5622800000000003;38967.00000000066
+71;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 63 -X -I;0.6483000000000005;1494241.357898459
+72;emotions;False;meka.classifiers.multilabel.RT;weka.classifiers.rules.PART -- -M 21 -B;0.593419999999999;37124.62259010801
+73;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+74;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 4;0.48706000000000005;12743.86413646515
+75;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+76;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+77;emotions;False;meka.classifiers.multilabel.RT;weka.classifiers.rules.PART -- -M 21 -B;0.593419999999999;37124.62259010801
+78;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+79;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+80;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+81;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 0;0.5617800000000008;13194.140975756567
+82;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -F;0.6479300000000009;1494227.1936163637
+83;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 63 -X -I;0.6483000000000005;1494241.357898459
+84;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 6 -X;0.6367700000000008;1493198.1592483136
+85;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+86;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 6 -X -I;0.6380300000000007;1493221.918600885
+87;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+88;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 4;0.48706000000000005;12743.86413646515
+89;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+90;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 63 -X -F;0.6461700000000009;1494256.2371540503
+91;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+92;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 4;0.48706000000000005;12743.86413646515
+93;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1e-11;0.6129999999999997;114891.00000000121
+94;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN;0.5968399999999996;238108.60291413355
+95;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+96;emotions;True;meka.classifiers.multilabel.BR;weka.classifiers.lazy.IBk -- -K 58 -X -I;0.6499800000000007;1494220.0732681965
+97;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+98;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN;0.5968399999999996;238108.60291413355
+99;emotions;False;meka.classifiers.multilabel.BR;weka.classifiers.functions.Logistic -- -R 1.0;0.6335050000000005;114891.00000000121
+100;emotions;False;meka.classifiers.multilabel.LC;weka.classifiers.trees.RandomTree -- -M 63 -K 0 -depth 0 -N 4;0.48706000000000005;12743.86413646515
+id;Dataset;normalize;meka;weka;F1 (macro averaged by label);Model Size
+1;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 0 -depth 2;0.5980099999999993;417482.22147020703
+2;emotions;False;meka.classifiers.multilabel.CT -X L -Iy 51 -Is 642 -P 'Macro Precision' -H 1;weka.classifiers.trees.LMT -- -M 40 -B -P -W 0.32;0.5721699999999997;204244.09867606545
+3;emotions;False;meka.classifiers.multilabel.CC;weka.classifiers.rules.JRip -- -N 3.9 -E -P -O 1;0.5481799999999992;74038.60748757776
+4;emotions;False;meka.classifiers.multilabel.PMCC -Iy 99 -Is 233 -B 0.34 -O 1 -M 42 -P 'Avg precision';weka.classifiers.functions.Logistic -- -R 1e-07;0.590595;5234198.60119336
+5;emotions;True;meka.classifiers.multilabel.CDN -Ic 81 -I 785;weka.classifiers.functions.VotedPerceptron -- -I 6 -M 46224 -E 4.200000000000002;0.5044300000000002;4328496.412744569
+6;emotions;True;meka.classifiers.multilabel.BPNN -E 550 -H 54 -r 0.016 -m 0.7;;0.5260000000000002;78771.00000000076
+7;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S -A;0.5983399999999994;50293.000000000364
+8;emotions;False;meka.classifiers.multilabel.MCC -Iy 53 -Is 841 -P 'Hamming loss';weka.classifiers.lazy.KStar -- -B 22 -M n;0.6139899999999997;4940240.77714496
+9;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+10;emotions;False;meka.classifiers.multilabel.RAkEL -N 3 -P 3 -k 1 -M 7;weka.classifiers.trees.RandomTree -- -M 12 -K 23 -depth 20 -N 0;0.52195;58335.9779097033
+11;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S -A;0.5983399999999994;50293.000000000364
+12;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S -A;0.5983399999999994;50293.000000000364
+13;emotions;True;meka.classifiers.multilabel.PS -P 5 -N 5;"weka.classifiers.functions.SMO -- -C 0.6 -N 0 -M -K ""weka.classifiers.functions.supportVector.Puk -O 0.6 -S 1.5000000000000002""";0.5742300000000001;1211766.0392343793
+14;emotions;True;meka.classifiers.multilabel.BPNN -E 491 -H 54 -r 0.075 -m 0.7;;0.5533500000000001;78783.73750455808
+15;emotions;False;meka.classifiers.multilabel.MCC -Iy 53 -Is 800 -P 'Hamming loss';weka.classifiers.trees.RandomTree -- -M 22 -K 25 -depth 7 -N 0;0.5655699999999999;35018.58937015673
+16;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+17;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+18;emotions;True;meka.classifiers.multilabel.CDN -Ic 81 -I 785;weka.classifiers.functions.VotedPerceptron -- -I 6 -M 46224 -E 4.200000000000002;0.5044300000000002;4328496.412744569
+19;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 0 -depth 2;0.5980099999999993;417482.22147020703
+20;emotions;True;meka.classifiers.multilabel.BPNN -E 550 -H 54 -r 0.016 -m 0.7;;0.5260000000000002;78771.00000000076
+21;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+22;emotions;False;meka.classifiers.multilabel.MCC -Iy 97 -Is 634 -P 'Log Loss (lim. L)';weka.classifiers.functions.VotedPerceptron -- -I 1 -M 19427 -E 2.500000000000001;0.08618000000000002;2596252.72082919
+23;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+24;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 15;0.6834;4098552.9569366644
+25;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+26;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S -A;0.5983399999999994;50293.000000000364
+27;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S -A;0.5983399999999994;50293.000000000364
+28;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+29;emotions;True;meka.classifiers.multilabel.PS -P 5 -N 5;"weka.classifiers.functions.SMO -- -C 0.6 -N 2 -M -K ""weka.classifiers.functions.supportVector.Puk -O 0.2 -S 5.5""";0.5738300000000001;1215915.6426008428
+30;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 0 -depth 2;0.5980099999999993;417482.22147020703
+31;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+32;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+33;emotions;False;meka.classifiers.multilabel.PS -P 2 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5696200000000007;37687.99999999965
+34;emotions;False;meka.classifiers.multilabel.RAkELd -P 2 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S;0.5702400000000004;50293.000000000364
+35;emotions;False;meka.classifiers.multilabel.PS -P 3 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5613600000000004;35255.999999999985
+36;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomTree -- -M 62 -K 0 -depth 15 -N 4;0.5455699999999996;62222.3179940278
+37;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+38;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+39;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1;0.6600375555555565;961796.5923570795
+40;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1;0.6600375555555565;961796.5923570795
+41;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1;0.6600375555555565;961796.5923570795
+42;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+43;emotions;False;meka.classifiers.multilabel.PS -P 2 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5696200000000007;37687.99999999965
+44;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+45;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+46;emotions;False;meka.classifiers.multilabel.PS -P 2 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5696200000000007;37687.99999999965
+47;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1;0.6600375555555565;961796.5923570795
+48;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1;0.6600375555555565;961796.5923570795
+49;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+50;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 15;0.6834;4098552.9569366644
+51;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+52;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 2;weka.classifiers.functions.Logistic -- -R 1e-09;0.5086299999999999;34034.00000000021
+53;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+54;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+55;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+56;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+57;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+58;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -J -A -C 0.5 -O;0.5632000000000003;25697.178555198127
+59;emotions;False;meka.classifiers.multilabel.PS -P 5 -N 5;weka.classifiers.functions.Logistic -- -R 0.0001;0.5513100000000009;34034.00000000021
+60;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 0 -depth 0;0.6775;4178240.708076432
+61;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+62;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes -- -K;0.6597076666666665;6159116.2904972145
+63;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 15;0.6834;4098552.9569366644
+64;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1;0.6600375555555565;961796.5923570795
+65;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -J -A -C 0.5 -O;0.5632000000000003;25697.178555198127
+66;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+67;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 245 -K 0 -depth 0;0.6946799999999999;34416470.16006741
+68;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+69;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+70;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -J -A -C 0.5 -O;0.5632000000000003;25697.178555198127
+71;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+72;emotions;False;meka.classifiers.multilabel.RAkELd -P 2 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -A -C 0.5 -O -S;0.5656100000000002;25705.439196139596
+73;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.8 -S -A;0.22110999999999995;50293.000000000364
+74;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -J -A -C 0.5 -O;0.5632000000000003;25697.178555198127
+75;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+76;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomTree -- -M 62 -K 7 -depth 15 -N 3;0.5300899999999997;60926.34288078499
+77;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomTree -- -M 62 -K 7 -depth 15 -N 4;0.5418199999999995;61150.1401659299
+78;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 8 -B -J -C 0.5 -O;0.55926;55284.99562638861
+79;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -J -A -C 0.5 -O;0.5632000000000003;25697.178555198127
+80;emotions;False;meka.classifiers.multilabel.RAkELd -P 2 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S;0.5702400000000004;50293.000000000364
+81;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 47 -B -J -A -U;0.5766700000000003;19979.312053892274
+82;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 0 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -A -C 0.15000000000000002 -O;0.5642000000000001;26073.288460351894
+83;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 15;0.6834;4098552.9569366644
+84;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 2 -batch-size 6;weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S -A;0.5983399999999994;50293.000000000364
+85;emotions;False;meka.classifiers.multilabel.RAkELd -P 2 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 22 -B -A -C 0.15000000000000002 -O;0.5673600000000003;25653.709816696537
+86;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1;0.6600375555555565;961796.5923570795
+87;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 256 -K 7 -depth 15;0.7002400000000005;33867001.10955835
+88;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 15;0.6834;4098552.9569366644
+89;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 112 -K 7 -depth 18;0.7040900000000004;15302958.560544418
+90;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomTree -- -M 62 -K 0 -depth 15 -N 4;0.5455699999999996;62222.3179940278
+91;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+92;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.NaiveBayes --;0.6280000000000008;354756.033387941
+93;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1;0.6600375555555565;961796.5923570795
+94;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.HillClimber -- -P 1;0.6600375555555565;961796.5923570795
+95;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 18;0.6826299999999997;4104535.7793073487
+96;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 112 -K 7 -depth 18;0.7040900000000004;15302958.560544418
+97;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 47 -B -J -A -U;0.5766700000000003;19979.312053892274
+98;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 31 -K 7 -depth 15;0.6834;4098552.9569366644
+99;emotions;False;meka.classifiers.multilabel.RAkELd -P 3 -N 5 -batch-size 6;weka.classifiers.trees.J48 -- -M 47 -B -J -A -U;0.5766700000000003;19979.312053892274
+100;emotions;False;meka.classifiers.multilabel.FW;weka.classifiers.trees.RandomForest -- -I 112 -K 7 -depth 15;0.7030900000000001;15273206.756373791
