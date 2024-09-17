@@ -1,0 +1,45 @@
+Number of queries on the classifier and objectives map: 0
+Number of classifiers exceeding the time limit: 6
+Execution time: 312.15947437286377
+
+Classifiers:
+False
+meka.classifiers.multilabel.FW
+weka.classifiers.bayes.NaiveBayes --
+
+False
+meka.classifiers.multilabel.RAkEL -N 1 -P 4 -k 2 -M 12
+weka.classifiers.functions.Logistic -- -R 1e-08
+
+False
+meka.classifiers.multilabel.BRq -P 0.4
+weka.classifiers.trees.J48 -- -M 50 -B -A -U
+
+False
+meka.classifiers.multilabel.CDN -Ic 46 -I 222
+weka.classifiers.trees.RandomForest -- -I 253 -K 0 -depth 16
+
+False
+meka.classifiers.multilabel.PSt -P 5 -N 1
+weka.classifiers.functions.SimpleLogistic -- -W 0.30000000000000004 -S
+
+False
+meka.classifiers.multilabel.RT
+weka.classifiers.trees.RandomTree -- -M 20 -K 0 -depth 6 -N 2
+
+Objective: -0.6326666666666667, 345423.0
+-0.6013333333333333, 236850.33333333334
+-0.562, 29220.333333333332
+-0.6786666666666666, 7055340.0
+-0.5986666666666667, 45755.0
+-0.52, 13528.333333333334
+
+
+F1 (macro averaged by label)
+0.6326666666666667 0.6013333333333333 0.562 0.6786666666666666 0.5986666666666667 0.52 
+
+Model Size
+345423.0 236850.33333333334 29220.333333333332 7055340.0 45755.0 13528.333333333334 
+
+Hypervolume:
+678320726.501111
