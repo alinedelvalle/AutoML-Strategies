@@ -9,9 +9,9 @@
 * number_generation: number of generations.
 * k_folds: number of folds.
 * n_threads: number of threads
-* limit_time = limit time in seconds to train the models.
+* limit_time: limit time in seconds to train the models.
 * project: project path.
-* name_dir_res = folder name in folder results/name_dataset.
+* name_dir_res: folder name in folder results/name_dataset.
 
 The outputs of this algorithm are in the results/name_dataset/name_dir_res folder and are:
 * Hypervolume graph.
