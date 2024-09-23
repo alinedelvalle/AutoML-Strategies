@@ -1,6 +1,6 @@
 # AutoML-Strategies
 
-This repository contains AutoML strategies for Multi-label Classification problems using multi-objective optimization and surrogate models. It includes the folders:
+This repository contains AutoML strategies for Multi-label Classification problems using multi-objective optimization and surrogate models. It includes the projects:
 * **Datasets**: the folder includes the datasets partitioned into 3-fold.
 * **Random**: implementation of Random Algorithm.
 * **AutoMLS**: implementation of AutoML strategy.
