@@ -1,5 +1,3 @@
-# https://github.com/UTS-CASLab/autoweka/blob/master/autoweka4mcps/params/base/weka.classifiers.bayes.net.search.local.SimulatedAnnealing.params
-
 import numpy as np
 
 def get_config(n_features, n_labels, weighted_instances_handler=False, only_multiclass_classifiers=False, randomizable=False):

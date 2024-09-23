@@ -20,7 +20,7 @@ class Configuration:
                                config_MLC.get_MLC_algorithms(self.n_features, self.n_labels)])
     
     
-    # dicionários de configuração
+    # configuration dictionary
     def get_sl_config(self):
         return config_SLC.get_config(self.n_features, self.n_labels)
     
@@ -49,7 +49,7 @@ class Configuration:
         dict_config.update(self.get_ml_ensemble_config())
         return dict_config
     
-    # obtém o tamanho da maior lista de hiperparâemtros dos espaço de busca
+    # get the size of the largest hyperparameter list in the search space
     def get_seed(self):
         dict_config = self.get_all_config()
                                           
