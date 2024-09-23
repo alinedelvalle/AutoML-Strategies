@@ -27,7 +27,7 @@ class ManipulateHistory:
     
     
     def get_hypervolume(res, point):
-        # Histórico de execução (número de avaliações e funções objetivos)
+        # Execution history (number of evaluations and objective functions)
         n_evals, hist_F = ManipulateHistory.get_hist_F(res)
             
         metric = Hypervolume (
