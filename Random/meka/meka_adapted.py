@@ -67,9 +67,6 @@ class MekaAdapted(Meka):
             check=True
         )
         
-        #print('--------------------------')
-        #print(process.returncode)
-        
         self.output_ = process.stdout
         self._error = process.stderr
         
