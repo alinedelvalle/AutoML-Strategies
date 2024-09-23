@@ -80,7 +80,7 @@ class FNDS:
         plt.savefig(file_name)
         
     
-# teste dominância
+# dominance test
 if __name__ == '__main__':
     a = Point(1, 5, True, 'a', 'b')
     b = Point(2, 3, True, 'c', 'd')

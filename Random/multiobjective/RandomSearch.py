@@ -33,7 +33,7 @@ class RandomSearch():
         self.n_example_test = [self.__get_n_example_test(self.path_dataset+'/'+self.name_dataset+'-test-'+str(k)+'.arff') for k in range(self.kfolds)]
         self.n_example_test_norm = [self.__get_n_example_test(self.path_dataset+'/'+self.name_dataset+'-norm-test-'+str(k)+'.arff') for k in range(self.kfolds)] if self.is_dataset_sparse == False else []
         
-        self.map_algs_objs = {} # algorithm: objective1, objective2
+        self.map_algs_objs = {} # algorithm dictionary: objective1, objective2
         self.rep = 0 # number of times the classifier was reused from the map
         self.classifier_limit_time = 0 # number of times the classifier timed out
         self.classifier_exception = 0 # number of exceptions
@@ -93,7 +93,7 @@ class RandomSearch():
                 timeout = self.limit_time
             )
             
-            # datasets name
+            # dataset names
             if is_normalize == False:
                 train_data = self.path_dataset+'/'+self.name_dataset+'-train-'
                 test_data = self.path_dataset+'/'+self.name_dataset+'-test-'
@@ -164,6 +164,7 @@ class RandomSearch():
         sample = Sampling(self.config, self.is_dataset_sparse) 
         
         # prepare the parameters for the pool
+        # converts numeric vectors into MLC algorithms
         params = [[CommandMW.get_commands(self.config, sample.do())] for i in range(n_sample)]
         
         # pool de threads
