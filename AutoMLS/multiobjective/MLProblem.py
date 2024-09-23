@@ -36,7 +36,7 @@ class MLProblem(Problem):
         self.n_example_test = [self.__get_n_example_test(self.path_dataset+'/'+self.name_dataset+'-test-'+str(k)+'.arff') for k in range(self.kfolds)]
         self.n_example_test_norm = [self.__get_n_example_test(self.path_dataset+'/'+self.name_dataset+'-norm-test-'+str(k)+'.arff') for k in range(self.kfolds)] if self.is_dataset_sparse == False else []
         
-        self.map_algs_objs = {} # algorithm: objective1, objective2
+        self.map_algs_objs = {} # dictionary of algorithms: objective1, objective2
         self.rep = 0 # number of times the classifier was reused from the map
         self.classifier_limit_time = 0 # number of times the classifier timed out
         self.classifier_exception = 0
@@ -53,7 +53,7 @@ class MLProblem(Problem):
         
         
     def __get_n_example_test(self, name_dataset_test):
-        # extrair do dataset: features e test example
+        # extract from dataset: features e test example
         x_test, y_test = load_from_arff(
             name_dataset_test, 
             label_count=self.n_labels,
@@ -94,7 +94,7 @@ class MLProblem(Problem):
                 timeout = self.limit_time
             )
             
-            # get dataset name
+            # get dataset names
             if is_normalize == False:
                 train_data = self.path_dataset+'/'+self.name_dataset+'-train-'
                 test_data = self.path_dataset+'/'+self.name_dataset+'-test-'
@@ -139,7 +139,7 @@ class MLProblem(Problem):
                 
                 AlgorithmsHyperparameters.add_metrics(k, is_normalize, meka_command, weka_command, statistics, model_size)
                 
-            # não houve erro    
+            # there is not errors  
             if flag == False or len(list_f1) > 0:
                 f1 = list_f1.mean()
                 f2 = list_f2.mean()
@@ -158,6 +158,7 @@ class MLProblem(Problem):
         pool = ThreadPool(self.n_threads)
         
         # prepare the parameters for the pool
+        # converts numeric vectors into MLC algorithms
         params = [[IndividualUtils.get_commands(self.config, X[k])] for k in range(len(X))]
         
         # pool de threads
@@ -172,4 +173,5 @@ class MLProblem(Problem):
         self.n_ger += 1 
         self.to_file_ger() # stores the current generation
         
+        # save metrics
         AlgorithmsHyperparameters.to_file(self.name_dataset, self.metrics_file)
