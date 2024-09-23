@@ -53,15 +53,15 @@ if __name__ == "__main__":
         n_features = 72 
         name_dataset = 'emotions' 
         is_dataset_sparse = False
-        java_command = '/home/dellvale/miniconda3/envs/AmbienteMEKA/bin/java'
-        meka_classpath = '/home/dellvale/scikit_ml_learn_data/meka/meka-release-1.9.2/lib/'
+        java_command = '' # path to the environment java
+        meka_classpath = '' # path path to the lib folder of the MEKA library
         len_population = 8
         number_generation = 10
         k_folds = 3
         n_threads = 4
         limit_time = 60 # seconds
-        project = '/home/dellvale/Testes/Cluster/GitHub/Experimento2/AutoMLS'
-        name_dir_res = 'exe1'
+        project = '' # project path
+        name_dir_res = 'exe1' # folder name in folder results/name_dataset
      
     n_gene = 28 # individual size
     termination_period = 10 # number of generations without changes
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     path_res = project+'/results/'+name_dataset+'/'+name_dir_res
     metrics_file = path_res+'/metrics.csv'
     
-    # feature,label
+    # configuration - search spece
     config = Configuration(n_features, n_labels)
     path_dataset = project+'/datasets/'+name_dataset
     problem = MLProblem(config, java_command, meka_classpath, k_folds, n_threads, limit_time, name_dataset, path_dataset, is_dataset_sparse, n_labels, n_features, log_file, metrics_file)
@@ -129,7 +129,7 @@ if __name__ == "__main__":
         
     output_data += f"Function value:\n{res.F}\n"
     
-    list_f1 = [] # -f1
+    list_f1 = [] # - macro f-score
     list_f2 = [] # model size
     for l in res.F:
         list_f1 = np.append(list_f1, l[0])

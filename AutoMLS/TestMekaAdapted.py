@@ -12,14 +12,14 @@ from sklearn.metrics import f1_score
 
 
 if __name__ == '__main__':
-    project = '/home/dellvale/Testes/Cluster/GitHub/Experimento2/AutoMLS/'
+    project = '' # project paths
     meka_classpath = download_meka()
        
     meka = MekaAdapted(       
         meka_classifier = 'meka.classifiers.multilabel.BR',
         weka_classifier = 'weka.classifiers.trees.RandomForest -- -I 100',
         meka_classpath = meka_classpath, # download_meka
-        java_command = '/home/dellvale/miniconda3/envs/AmbienteMEKA/bin/java', # path to the java do environment
+        java_command = '', # path to the java do environment
         timeout = 100 # seconds 
     )
     
