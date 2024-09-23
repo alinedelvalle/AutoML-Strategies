@@ -73,7 +73,6 @@ def get_config(n_features, n_labels, weighted_instances_handler = False, only_mu
         },
         
 
-        # viável para problemas com menos de 15 rótulos
         'meka.classifiers.multilabel.PCC': {     
             '-W': get_slc_config(n_features, n_labels, weighted_instances_handler, only_multiclass_classifiers) 
         },

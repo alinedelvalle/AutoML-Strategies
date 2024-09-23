@@ -20,7 +20,7 @@ class Configuration:
                                config_MLC.get_MLC_algorithms(self.n_features, self.n_labels)])
     
     
-    # dicionários de configuração
+    # configuration dictionary
     def get_sl_config(self):
         return config_SLC.get_config(self.n_features, self.n_labels)
     
