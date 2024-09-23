@@ -5,3 +5,4 @@ This repository contains AutoML strategies for Multi-label Classification proble
 * **Random**: implementation of Random Algorithm.
 * **AutoMLS**: implementation of AutoML strategy.
 * **AutoMLS_SM**: implementation of AutoML strategy based in surrogate models. We did not add the surrogate models to this project due to GitHsb's upload size limitation.
+* **SurrogateModel**: contains implementations for creating the meta-datasets from the metrics files; and obtaining the surrogate models from the meta-datasets.
