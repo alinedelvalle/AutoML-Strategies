@@ -53,7 +53,7 @@ if __name__ == "__main__":
         len_population = 10
         number_generation = 10
         n_threads = 4
-        project = '/home/dellvale/Testes/Cluster/GitHub/Experimento2/AutoMLS_SM' # project path
+        project = '' # project path
         name_dir_res = 'exe1' # folder name in folder results
         
      
