@@ -16,3 +16,5 @@ The outputs of this algorithm are in the results/name_dataset/name_dir_res folde
 * Objective space graph.
 * Results File.
 * Metrics file (CSV) with the history of the evaluated algorithms.
+
+The models folder contains the trained surrogate models. The surrogate models were not made available due to their size.
