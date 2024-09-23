@@ -67,9 +67,6 @@ class MekaAdapted(Meka):
             check=True
         )
         
-        #print('--------------------------')
-        #print(process.returncode)
-        
         self.output_ = process.stdout
         self._error = process.stderr
         
@@ -92,7 +89,7 @@ class MekaAdapted(Meka):
     def fit_predict(self, instances_test_count, label_count, train_arff, test_arff):  
         # sets attributes with None
         self._clean()
-        self._instance_count = instances_test_count # de teste
+        self._instance_count = instances_test_count
         self._label_count = label_count
         self.len_model_file = 0
         
