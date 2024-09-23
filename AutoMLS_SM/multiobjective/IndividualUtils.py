@@ -2,19 +2,18 @@ import numpy as np
 
 class IndividualUtils:
     
-    # Decodificação do indivíduo:
-    # Os hip. booleanos aparecem ou não no comando, mas ocupam posições no indivíduo
-    # Os hip. dependentes de condicionais são contabilizados no indivíduo a depender
-    # da condição
+    # Decoding the individual:
+    # Boolean hyperparameters may or may not appear in the command, but they occupy positions in the individual
+    # Hyperparameters dependent on conditionals are counted in the individual depending on the condition
     
-    # Função de decodificação para: ensemble de MLC, MLC e ensemble de SLC
+    # Decoding function for: MLC ensemble, MLC and SLC ensemble
     def command_aux(individual, config_algorithm, i):
         command = ''
         params = {}
         algorithm = ''
         is_normalize = None
         for variable in config_algorithm.keys():
-            if variable == 'if': # função
+            if variable == 'if': # function
                 function = config_algorithm[variable]
                 return_function = function(params)
         
@@ -57,13 +56,15 @@ class IndividualUtils:
             
         return i, is_normalize, command, algorithm
     
-    # Função de decodificação para SLC
+    # -------------------------------------------------------------------------
+    
+    # Decoding function for SLC
     def command_slc_aux(individual, config, config_algorithm, i):
         command = ''
         params = {}
         is_normalize = None
         for variable in config_algorithm.keys():
-            if variable == 'if': # função
+            if variable == 'if': # function
                 function = config_algorithm[variable]
                 return_function = function(params)
         
@@ -81,14 +82,14 @@ class IndividualUtils:
                             command = command + ' ' + var + ' ' + str(value)
                                 
                         i = i + 1    
-            else: # lista ou kernel
+            else: # list or kernel
                 all_values = config_algorithm[variable]
             
                 if variable == '-normalize':
                     value = all_values[individual[0]%len(all_values)]
                     is_normalize = False if value%2 == 0 else True
                     
-                elif isinstance(all_values, np.ndarray): # lista
+                elif isinstance(all_values, np.ndarray): # list
                     value = all_values[individual[i]%len(all_values)]
                     params[variable] = value
                     
@@ -124,14 +125,15 @@ class IndividualUtils:
                     
         return i, is_normalize, command
 
+    # -------------------------------------------------------------------------
     
-    # Decodifica o indivíduo em comandos weka e meka
+    # Decodes the individual into weka and meka commands
     def get_commands(config, individual):
         is_pt = False # PT - problem transformation
         is_mlc_ensemble = False
         
         # index 0
-        # normalização, depende do algoritmo MLC ou SLC
+        # normalization, it depends on the MLC or SLC algorithm
         
         # index 1
         index_algorithm = individual[1] 
@@ -182,8 +184,8 @@ class IndividualUtils:
                             
     # -------------------------------------------------------------------------
     
-    # Obtém a quantidade de genes que representam o indivíduo
-    # utiliza as funções auxiliares: get_lenght_aux e get_lenght_slc_aux
+    # Gets the number of genes that represent the individual
+    # uses the auxiliary functions: get_lenght_aux and get_lenght_slc_aux
     def get_lenght_individual(config, individual):
         is_pt = False # PT - problem transformation
         is_mlc_ensemble = False
@@ -228,15 +230,16 @@ class IndividualUtils:
             # SLC
             i = IndividualUtils.get_lenght_slc_aux(individual, config, config_algorithm, i)
             
-        return i # tamanho
+        return i # size
     
+    # -------------------------------------------------------------------------
     
-    # Obtém a quantidade de genes ocupadas por: ensemble de MLC, MLC e ensemble de SLC
+    # Get the number of genes occupied by: MLC ensemble, MLC and SLC ensemble
     def get_lenght_aux(individual, config_algorithm, i):
         params = {}
         algorithm = ''
         for variable, all_values in config_algorithm.items():
-            if variable == 'if': # função
+            if variable == 'if': # finction
                 function = config_algorithm[variable]
                 return_function = function(params)
         
@@ -259,12 +262,13 @@ class IndividualUtils:
             
         return i, algorithm
     
+    # -------------------------------------------------------------------------
     
-    # Obtém a quantidade de genes ocupadas por algoritmos SLC
+    # Get the number of genes occupied by SLC algorithms
     def get_lenght_slc_aux(individual, config, config_algorithm, i):
         params = {}
         for variable, all_values in config_algorithm.items():
-            if variable == 'if': # função
+            if variable == 'if': # function
                 function = config_algorithm[variable]
                 return_function = function(params)
         
@@ -274,7 +278,7 @@ class IndividualUtils:
                         value = values[individual[i]%len(values)]
                         params[var] = value
                         i = i + 1    
-            else: # lista ou kernel
+            else: # list or kernel
             
                 if isinstance(all_values, np.ndarray): # lista
                     value = all_values[individual[i]%len(all_values)]
@@ -293,6 +297,3 @@ class IndividualUtils:
                         i = i + 1
                               
         return i
-    
-    
-    

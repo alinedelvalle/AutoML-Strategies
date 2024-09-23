@@ -8,7 +8,7 @@ from multiobjective.IndividualUtils import IndividualUtils
 
 from utils.AlgorithmsHyperparameters import AlgorithmsHyperparameters
 
-from multiobjective.CodifyIndividual import *
+from multiobjective.MetaDatasetUtils import *
 
 from multiprocessing.pool import ThreadPool 
 
@@ -58,6 +58,7 @@ class MLProblem(Problem):
         models_f2 = [joblib.load(self.path_model2) for k in range(self.n_threads)]
         
         # prepare the parameters for the pool
+        # converts numeric vectors into MLC algorithms
         params = [[(IndividualUtils.get_commands(self.config, X[k]), models_f1[k%self.n_threads], models_f2[k%self.n_threads])] for k in range(len(X))]
         
         # pool de threads
