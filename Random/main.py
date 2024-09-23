@@ -41,7 +41,7 @@ if __name__ == '__main__':
         n_features = 72 
         name_dataset = 'emotions' 
         is_dataset_sparse = False
-        java_command = '/' # path para o java do environment
+        java_command = '' # path para o java do environment
         meka_classpath = '' # path path to the lib folder of the MEKA library
         n_sample = 20
         kfolds = 3
