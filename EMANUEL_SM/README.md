@@ -1,4 +1,4 @@
-**AutoMLS_SM** is an implementation of the AutoML multi-objective strategy for multi-label classification (MLC) using surrogate models. To execute the algorithm, we run the main.py file. The inputs to this algorithm are:
+**EMANUEL_SM** is an implementation of the AutoML multi-objective strategy for multi-label classification (MLC) using surrogate models. To execute the algorithm, we run the main.py file. The inputs to this algorithm are:
 * n_labels: number of labels.
 * n_features: number of features.
 * name_dataset: dataset name (ARFF). The k-folds of this dataset must be in folder datasets.
